@@ -14,7 +14,7 @@ class DatasetLoader:
         return self.dataset.to_pandas()  # Convert the dataset to a pandas DataFrame
 
     def print_dataset(self):
-        print(self.load_datasetz())
+        print(self.load_dataset())
 
     def dataset_info(self):
         #columns_names = self.dataset.column_names
@@ -31,5 +31,5 @@ class DatasetLoader:
             return self.choose_your_feature()  # Recursively ask for a valid choice
     
 
-data=DatasetLoader()  # Create an instance of DatasetLoader
-data.print_dataset
+#data=DatasetLoader()  # Create an instance of DatasetLoader
+#data.print_dataset
