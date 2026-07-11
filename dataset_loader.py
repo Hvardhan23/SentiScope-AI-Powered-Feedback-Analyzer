@@ -5,7 +5,7 @@ class DatasetLoader:
 
     Dataset_id = "zeroshot/twitter-financial-news-sentiment"
 
-    def __init__(self, dataset_id= str = Dataset_id):
+    def __init__(self, dataset_id: str = Dataset_id):
         authenticate_huggingface()  # Authenticate with Hugging Face
         self.dataset_id = dataset_id or self.Dataset_id
         self.dataset = self.load_dataset(dataset_id, split="train")
