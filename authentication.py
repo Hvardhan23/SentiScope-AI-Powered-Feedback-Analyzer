@@ -11,3 +11,5 @@ def authenticate_huggingface():
     print("Authenticating with Hugging Face...")
     login(token=api_key)
     print("Authentication successful!")
+
+authenticate_huggingface()
