@@ -7,8 +7,8 @@ class DatasetLoader:
 
     def __init__(self, dataset_id: str = Dataset_id):
         authenticate_huggingface()  # Authenticate with Hugging Face
-        self.dataset_id = dataset_id or self.Dataset_id
-        self.dataset = self.load_dataset(dataset_id, split="train")
+        self.dataset_id = dataset_id
+        self.dataset = load_dataset(dataset_id, split="train")
 
     def load_dataset(self):
         return self.dataset.to_pandas()  # Convert the dataset to a pandas DataFrame
