@@ -1,6 +1,6 @@
-from hardware_preparation import torch, gpu_preparation 
+from hardware_perp import torch, gpu_preparation 
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, BitsAndBytesConfig
-from hugging_face_authentication import hugging_face_auth
+from authentication import authenticate_huggingface as hugging_face_auth
 
 
 class ModelManager:
