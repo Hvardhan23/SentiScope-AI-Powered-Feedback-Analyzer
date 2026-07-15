@@ -19,3 +19,4 @@ This repository has been initialized as a starter project for the SentiScope ide
 ```bash
 python app.py
 ```
+day 3 idk what to update
