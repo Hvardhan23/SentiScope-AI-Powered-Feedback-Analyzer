@@ -9,8 +9,7 @@ class ModelManager:
     Supports optional 4-bit quantization via BitsAndBytes for memory-efficient inference.
     """
 
-    DEFAULT_MODEL_ID = "Qwen/Qwen2.5-3B-Instruct" # another example deepseek-ai/deepseek-coder-1.3b-instruct
-
+    DEFAULT_MODEL_ID = "Qwen/Qwen2.5-3B-Instruct" 
     def __init__(self, model_id=DEFAULT_MODEL_ID, quantization_setting=True):
         """
             Initializing our Model class with our tokenizer and loading model
@@ -68,3 +67,5 @@ class ModelManager:
             f"model={self.model}, "
             f"device='{torch.cuda.get_device_name(0)}')"
         )
+
+#error in tokenzier 
